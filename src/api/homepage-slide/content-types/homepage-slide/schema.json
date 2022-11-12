@@ -1,0 +1,72 @@
+{
+  "kind": "collectionType",
+  "collectionName": "homepage_slides",
+  "info": {
+    "singularName": "homepage-slide",
+    "pluralName": "homepage-slides",
+    "displayName": "Homepage Slides",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "use_custom_slider": {
+      "type": "boolean",
+      "default": true
+    },
+    "custom_background_image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "custom_mobile_background_image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "slide_type": {
+      "type": "enumeration",
+      "enum": [
+        "graphic",
+        "text"
+      ],
+      "default": "text"
+    },
+    "slide_text": {
+      "type": "richtext"
+    },
+    "slide_link": {
+      "type": "string"
+    },
+    "use_header_gradient": {
+      "type": "boolean",
+      "default": false
+    },
+    "header_gradient_type": {
+      "type": "enumeration",
+      "enum": [
+        "light",
+        "dark"
+      ]
+    },
+    "is_holiday_slide": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}
